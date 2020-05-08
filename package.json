@@ -1,7 +1,7 @@
 {
   "name": "@leveluptuts/svelte-notion",
   "author": "Scott Tolinski",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Svelte Notion Helpers",
   "svelte": "src/index.js",
   "repository": "leveluptuts/svelte-notion",

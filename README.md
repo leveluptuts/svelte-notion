@@ -10,6 +10,33 @@ This package is very experimental and subject to change. Check out a working pag
 
 `npm install @leveluptuts/svelte-notion`
 
+### Svelte
+
+```
+
+<script context="module">
+    import Notion from './Notion.svelte'
+    import { fetchNotion } from './fetchNotion'
+
+    const fetchImage = (async () => {
+        const pageId = `3e03212e646e41caaa560408162dee99`
+        return await fetchNotion({ id: pageId, context: this })
+    })()
+</script>
+
+{#await fetchImage}
+    <p>...waiting</p>
+{:then blocks}
+    <Notion {blocks} />
+{:catch error}
+    <p>An error occurred!</p>
+{/await}
+
+
+```
+
+### Sapper
+
 ```
 
 <script context="module">
