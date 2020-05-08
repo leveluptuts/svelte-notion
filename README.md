@@ -1,5 +1,11 @@
 # Svelte Notion
 
+## @leveluptuts/svelte-notion
+
+![Bboy Physicx](https://thumbs.gfycat.com/ParallelDismalBlackrussianterrier-size_restricted.gif)
+
+[![NPM](https://img.shields.io/npm/v/@leveluptuts/svelte-notion?color=524763&logoColor=524763&style=for-the-badge)](https://www.npmjs.com/package/@leveluptuts/fresh)
+
 An unofficial Notion API tool set for Svelte & Sapper
 
 This package uses https://github.com/splitbee/notion-api-worker to generate the API. You can host this yourself, but OOTB it uses https://notion-api.splitbee.io/
@@ -76,7 +82,7 @@ We happily accept pull requests to add support for the missing blocks. I'll be a
 | iframe            | ❌ Missing |                      |
 | Video             | ❌ Missing | Only embedded videos |
 | Divider           | ✅ Yes     |                      |
-| Link              | ❌ Missing |                      |
+| Link              | ✅ Yes     |                      |
 | Code              | ✅ Yes     |                      |
 | Web Bookmark      | ❌ Missing |                      |
 | Databases         | ❌ Missing |                      |
