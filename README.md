@@ -8,6 +8,28 @@ This package is very experimental and subject to change. Check out a working pag
 
 ## How To Use
 
+`npm install @leveluptuts/svelte-notion`
+
+```
+
+<script context="module">
+  import { Notion, fetchNotion } from "@leveluptuts/svelte-notion";
+
+  export async function preload() {
+    const pageId = `3e03212e646e41caaa560408162dee99`;
+    const blocks = await fetchNotion({ id: pageId, context: this });
+    return { blocks };
+  }
+</script>
+
+<script>
+  export let blocks;
+</script>
+
+<Notion {blocks} />
+
+```
+
 ## What's supported currently
 
 (shout-out to splitbee for this dope table. I borrowed from his React Notion repo)

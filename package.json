@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "description": "Svelte Notion Helpers",
   "svelte": "src/index.js",
-  "private": true,
+  "repository": "leveluptuts/svelte-notion",
   "scripts": {
     "build": "rollup -c",
     "autobuild": "rollup -c -w",
