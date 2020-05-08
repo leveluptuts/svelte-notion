@@ -1,6 +1,6 @@
 <script>
-    import Code from './Code.svelte'
-    import Text from './Text.svelte'
+    import Code from './blocks/Code.svelte'
+    import Text from './blocks/Text.svelte'
     export let blocks
 </script>
 
