@@ -15,8 +15,7 @@ This package is very experimental and subject to change. Check out a working pag
 ```
 
 <script context="module">
-    import Notion from './Notion.svelte'
-    import { fetchNotion } from './fetchNotion'
+    import { Notion, fetchNotion } from "@leveluptuts/svelte-notion";
 
     const fetchImage = (async () => {
         const pageId = `3e03212e646e41caaa560408162dee99`
@@ -71,7 +70,7 @@ We happily accept pull requests to add support for the missing blocks. I'll be a
 | Image Caption     | ❌ Missing |                      |
 | Bulleted List     | ❌ Missing |                      |
 | Numbered List     | ❌ Missing |                      |
-| Quote             | ❌ Missing |                      |
+| Quote             | ✅ Yes     |                      |
 | Callout           | ❌ Missing |                      |
 | Column            | ❌ Missing |                      |
 | iframe            | ❌ Missing |                      |

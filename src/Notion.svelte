@@ -1,5 +1,6 @@
 <script>
     import Code from './Code.svelte'
+    import Text from './Text.svelte'
     export let blocks
 </script>
 
@@ -13,13 +14,13 @@
     {:else if block.type === 'sub_sub_header'}
         <h3>{block.properties.title[0][0]}</h3>
     {:else if block.type === 'text'}
-        {#if block.properties}
-            <p>{block.properties.title[0][0]}</p>
-        {:else}
-            <br />
-        {/if}
+        <Text {block} />
     {:else if block.type === 'divider'}
         <hr />
+    {:else if block.type === 'quote'}
+        <blockquote className="notion-quote">
+            {block.properties.title[0][0]}
+        </blockquote>
     {:else if block.type === 'code'}
         <Code
             code={block.properties.title[0][0]}
