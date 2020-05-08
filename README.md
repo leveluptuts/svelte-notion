@@ -1,81 +1,41 @@
-[![Build Status](https://travis-ci.org/patoi/svelte-component-library-template.svg?branch=master)](https://travis-ci.org/patoi/svelte-component-library-template) [![Dependabot](https://badgen.net/badge/Dependabot/enabled/green?icon=dependabot)](https://dependabot.com/) ![](https://github.com/patoi/svelte-component-library-template/workflows/Auto%20merge%20Dependabot%20updates/badge.svg)
+# Svelte Notion
 
-# Svelte Components template
+An unofficial Notion API tool set for Svelte & Sapper
 
-**You can create your own component library to your applications with this template.**
+This package uses https://github.com/splitbee/notion-api-worker to generate the API. You can host this yourself, but OOTB it uses https://notion-api.splitbee.io/
 
-A base for building Svelte component library.
+This package is very experimental and subject to change. Check out a working page here: https://www.scotttolinski.com/notion
 
-Original work is https://github.com/sveltejs/component-template
+## How To Use
 
-## Using
+## What's supported currently
 
-**On GitHub:**
+(shout-out to splitbee for this dope table. I borrowed from his React Notion repo)
 
-`Use this template` button on top right.
+We happily accept pull requests to add support for the missing blocks. I'll be adding as many as I can asap.
 
-Read more: [Creating a repository from a template](https://help.github.com/en/articles/creating-a-repository-from-a-template)
+| Block Type        | Supported  | Notes                |
+| ----------------- | ---------- | -------------------- |
+| Text              | ✅ Yes     |                      |
+| Heading           | ✅ Yes     |                      |
+| Image             | ❌ Missing |                      |
+| Image Caption     | ❌ Missing |                      |
+| Bulleted List     | ❌ Missing |                      |
+| Numbered List     | ❌ Missing |                      |
+| Quote             | ❌ Missing |                      |
+| Callout           | ❌ Missing |                      |
+| Column            | ❌ Missing |                      |
+| iframe            | ❌ Missing |                      |
+| Video             | ❌ Missing | Only embedded videos |
+| Divider           | ❌ Missing |                      |
+| Link              | ❌ Missing |                      |
+| Code              | ✅ Yes     |                      |
+| Web Bookmark      | ❌ Missing |                      |
+| Databases         | ❌ Missing |                      |
+| Checkbox          | ❌ Missing |                      |
+| Toggle List       | ❌ Missing |                      |
+| Table Of Contents | ❌ Missing |                      |
 
-**CLI:**
+## Credits
 
-1. Clone it with [degit](https://github.com/Rich-Harris/degit)
-
-```bash
-npx degit patoi/svelte-component-library-template svelte-component-library-template
-cd svelte-component-library-template
-npm install # or yarn
-```
-
-2. Add your component's code to [src/](./src/) as directory, e.g.: [src/HelloComponent/](./src/HelloComponent/) (or add your component directly to [src/](./src/)).
-
-3. Export the new component to apps in [src/index.js](./src/index.js)
-
-4. [src/test.js](./src/test.js) and [src/App.svelte](./src/App.svelte) are for testing purposes:
-
--   add component to the [src/App.svelte](./src/App.svelte)
--   add component's properties to [src/test.js](./src/test.js)
-
-4. Create your test cases to your component:
-
--   add tests to [test/](./test/) directory
-
-## Development
-
-1. `npm install`
-
-2. `npm run dev` :
-
--   **build components on change** and
--   **serves** from `public/` directory at `http://localhost:5000`
--   and **handling livereload**
-
-3. `npm test` : test runner
-
-For changing the view of the test page use [public/global.css](./public/global.css) and [public/index.html](./public/index.html)
-
-## Using components in app
-
-https://github.com/rollup/rollup-plugin-svelte#pkgsvelte
-
-**Tip:** if you are a developer of the _component library,_ then you can install it _once_ as **devDependencies** to app with `npm i -D <path-to-your-components>` , all change will appear immediately if you use livereload in app.
-
-Import _component library_ into your app in `App.svelte` :
-
-```html
-<script>
-    import { ByeBye, Hello } from 'svelte-component-library-template'
-    export let name
-</script>
-
-<Hello {name} />
-<ByeBye {name} />
-```
-
-## Technical background
-
-More: https://github.com/sveltejs/sapper-template/blob/master/README.md#using-external-components
-
--   `svelte` https://svelte.dev
--   `nightwatch` for testing: https://nightwatchjs.org
--   `eslint` and `prettier` for formatting and linting
--   `rollupjs` for bundling: https://rollupjs.org
+Heavily inspired by https://github.com/splitbee/react-notion
