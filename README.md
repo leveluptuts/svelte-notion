@@ -58,6 +58,20 @@ We happily accept pull requests to add support for the missing blocks. I'll be a
 | Toggle List       | ❌ Missing |                      |
 | Table Of Contents | ❌ Missing |                      |
 
+## How To Host Your Own API
+
+Coming Soon
+
+## FAQ
+
+### Is this practical?
+
+Maybe? I could be much more very soon.
+
+### I thought Notion didn't have an API?
+
+It don't. Don't hold your breath on this working for ever. See the Splitbee package for more info. The intention would be to migrate this to the official API once it's released.
+
 ## Credits
 
 Heavily inspired by https://github.com/splitbee/react-notion
