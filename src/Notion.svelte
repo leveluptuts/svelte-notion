@@ -1,6 +1,7 @@
 <script>
     import Code from './blocks/Code.svelte'
     import Text from './blocks/Text.svelte'
+    import Image from './blocks/Image.svelte'
     export let blocks
 </script>
 
@@ -25,5 +26,7 @@
         <Code
             code={block.properties.title[0][0]}
             lang={block.properties.language[0][0]} />
+    {:else if block.type === 'image'}
+        <Image {block}/>
     {/if}
 {/each}
