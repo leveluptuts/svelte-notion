@@ -9,4 +9,7 @@
     $: code = `<pre class='language-javascriptreact'><code>${highlighted}</code></pre>`
 </script>
 
-{@html code}
+<pre
+  class="language-{lang}">
+    <code class="language-{lang}">{@html html}</code>
+</pre>
